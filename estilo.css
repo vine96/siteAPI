@@ -1,0 +1,336 @@
+*{
+	font-family: Noto Sans;
+	margin: 0;
+	padding: 0;
+}
+
+#acimaHeader{
+	margin-left: 30%;
+	font-size: 10pt;
+}
+
+#acimaHeader img{
+	width: 100px;
+}
+
+/*.parteSuperior li{
+display: inline-block;
+margin: 0px 5px 0px 5px;
+}*/
+
+.menu{
+	width: 100%;
+	height: 50px;
+}
+
+.menu ul{
+	list-style: none;
+	position: relative;
+}
+
+.menu ul li{
+	width: 150px;
+	float: left;
+}
+
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+}
+
+.parteSuperior2 li{
+	display: inline-block;
+	margin: -2px;
+}
+
+.parteInferior li{
+	display: inline-block;
+	margin: 10px 40px 10px 40px;
+}
+
+.parteInferior p{
+	font-size: 8pt;
+}
+
+.parteInferior h2{
+	font-size: 10pt;
+	font-weight: bolder;
+}
+
+.parteInferior{
+	clear: both;
+}
+
+.parteSuperior{
+	padding: 13px 0px 0px 0px;
+	margin-left: 200px;
+}
+
+.parteSuperior2{
+	text-align: center;
+}
+
+#ahEsquerdo{
+	float: left;
+}
+
+.enderecoImg{
+	width: 50%;
+}
+
+header{
+	clear: both;
+}
+
+header img{
+	width: 100%;
+	height: 200px;
+}
+
+footer{
+	background-color: #1d2a38;
+	color: white;
+	text-align: center;
+	padding: 50px 0px 15px 0px;
+}
+
+#copy{
+	margin-top: 60px;
+	font-size: 10pt;
+	color: #425f7f;
+	font-size: 7pt;
+	font-weight: bold;
+}
+.orange{
+	color: #ff6600;
+}
+
+.titFooter{
+	margin-bottom: 10px;
+}
+
+.buscar{
+	background-color: #ff6600;
+	color: white;
+	font-weight: bolder;
+	border: 0px;
+}
+
+#partSup2{
+	text-align: center;
+	background-color: #E0E0E0;
+	margin: 0 auto;
+}
+
+#morefilt{
+	padding: 25px 0px 10px 0px;
+	font-size: 8pt;
+}
+
+.corpo{
+	text-align: center;
+}
+
+.anuncio5{
+	background-color: #425f7f;
+	color: white;
+	padding: 50px;
+	clear: both;
+}
+
+.parteSuperior a{
+	text-decoration: none;
+	color: black;
+}
+
+.anuncio5 h1{
+	font-size: 15pt;
+	clear: both;
+}
+
+.lupa{
+	width: 12px;
+	margin: 0px 5px 0px 2px;
+	padding: 0;
+}
+
+.lupa2{
+	width: 20px;
+	margin: 0px 5px 0px 2px;
+	padding: 0;
+}
+
+.destaque{
+	font-size: 15pt;
+	text-align: center;
+}
+
+.boxUm{
+	float: left;
+}
+
+.boxDois{
+	float: left;
+}
+
+.boxTres{
+	float: left;
+}
+
+.container {
+	display: table;
+	width: 100%;
+}
+
+.row{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.menu{
+	font-size: 9pt;
+	width: 100%;
+	height: 40px;
+}
+
+.menu ul{
+	list-style: none;
+	position: relative;
+}
+
+.menu ul li{
+	width: 150px;
+	float: left;
+}
+
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+}
+
+.menu ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu ul li:hover ul{
+	visibility: visible;
+}
+
+.menu a:hover{
+	background-color: #f4f4f4;
+	color: #555;
+}
+
+.menu ul ul li {
+	float: none;
+	border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a{
+	background-color: #069;
+}
+
+label[for="bt_menu"]{
+	padding: 5px;
+	background-color: #222;
+	color: white;
+	font-family: "Arial";
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+#bt_menu{
+	display: none;
+}
+
+label[for="bt_menu"]{
+	display: none;
+}
+
+@media(max-width: 800px){
+	label[for="bt_menu"]{
+	display: block;
+	}
+
+	#bt_menu:checked ~ .menu{
+		margin-left: 0; 
+	}
+
+	#bt_menu:checked ~ .menu li a{
+		background-color: black;
+		color: white;
+	}
+
+	#bt_menu:checked ~ .menu li a:hover{
+		background-color: #8c8c8c;
+		color: white;
+	}
+
+	.menu{
+		margin-top: 5px;
+		margin-left: -1000%;
+		background-color: black;
+		color: white;
+	}
+
+	.menu ul li{
+		width: 100%;
+		float: none;
+	}
+
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+
+	.menu ul li:hover ul{
+		height: auto;
+		max-height: 200px;
+
+	}
+}
+
+.aEsquerda{
+	float: left;
+}
+
+
+.aDireita{
+	float: right;
+}
+
+.corpo{
+	margin: 50px;
+}
+
+.destaque{
+	margin-bottom: 50px
+}
+
+#sux{
+	padding: 50px;
+}
+
+/*Cores
+
+Laranja: #ff6600
+Azul escuro: #1d2a38
+Azul claro: #425f7f
+
+Fonte usada: Noto Sans
+
+Icones
+https://fontawesome.com/*/
